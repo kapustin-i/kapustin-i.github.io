@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Igor Kapustin — human–AI interaction</title>
+<meta name="description" content="Igor Kapustin — independent author on human–AI interaction. Open essays and specifications: The Bush Book, The Blind Kittens, A Registry of Proto-Concepts, Offline Emergency Dispatch Protocol.">
+<meta name="author" content="Igor Kapustin">
+<link rel="canonical" href="https://kapustin-i.github.io/">
+<link rel="me" href="https://orcid.org/0009-0008-5665-9281">
+<link rel="me" href="https://github.com/kapustin-i">
+<link rel="me" href="https://www.linkedin.com/in/igor-kapustin-457418384">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0008-5665-9281",
+      "name": "Igor Kapustin",
+      "description": "Independent author on human–AI interaction. Physician by training.",
+      "url": "https://kapustin-i.github.io/",
+      "sameAs": [
+        "https://orcid.org/0009-0008-5665-9281",
+        "https://github.com/kapustin-i",
+        "https://www.linkedin.com/in/igor-kapustin-457418384"
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Bush Book: a consciously bilingual human–machine book",
+      "genre": "Concept note",
+      "version": "0.1",
+      "inLanguage": ["en", "ru"],
+      "author": {"@id": "https://orcid.org/0009-0008-5665-9281"},
+      "identifier": "https://doi.org/10.5281/zenodo.23042947",
+      "url": "https://doi.org/10.5281/zenodo.23042947",
+      "codeRepository": "https://github.com/kapustin-i/bush-book",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creditText": "Igor Kapustin. Written with Claude (Anthropic)."
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "The Blind Kittens and the Trainers of Their New AI Models",
+      "genre": "Essay",
+      "author": {"@id": "https://orcid.org/0009-0008-5665-9281"},
+      "identifier": "https://doi.org/10.5281/zenodo.22924768",
+      "url": "https://doi.org/10.5281/zenodo.22924768",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Conditions of Admission and Participation for People Testing and Raising AI Models",
+      "genre": "Specification",
+      "version": "0.1",
+      "author": {"@id": "https://orcid.org/0009-0008-5665-9281"},
+      "identifier": "https://doi.org/10.5281/zenodo.22924859",
+      "url": "https://doi.org/10.5281/zenodo.22924859",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Registry of Proto-Concepts with Referent Quarantine",
+      "genre": "Specification",
+      "version": "0.1",
+      "author": {"@id": "https://orcid.org/0009-0008-5665-9281"},
+      "identifier": "https://doi.org/10.5281/zenodo.22084328",
+      "url": "https://doi.org/10.5281/zenodo.22084328",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Offline Emergency Dispatch Protocol",
+      "genre": "Draft specification",
+      "author": {"@id": "https://orcid.org/0009-0008-5665-9281"},
+      "url": "https://github.com/kapustin-i/offline-dispatch-protocol",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ]
+}
+</script>
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --text: #1d1d1b;
+    --muted: #5f5d57;
+    --line: #e4e1d8;
+    --accent: #7a3b12;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161614;
+      --text: #ecebe6;
+      --muted: #a9a69c;
+      --line: #2e2d29;
+      --accent: #e0a36f;
+      --card: #1e1d1a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #161614;
+    --text: #ecebe6;
+    --muted: #a9a69c;
+    --line: #2e2d29;
+    --accent: #e0a36f;
+    --card: #1e1d1a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 Georgia, "Times New Roman", serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+  h2 {
+    font: 600 0.8rem/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); margin: 48px 0 12px;
+  }
+  p { margin: 0 0 12px; }
+  .lead { color: var(--muted); }
+  .ru { color: var(--muted); font-size: 0.95rem; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  .links { font: 0.9rem/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; margin-top: 16px; }
+  .links a { margin-right: 16px; white-space: nowrap; }
+  .work {
+    background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+    padding: 16px 18px; margin: 0 0 12px;
+  }
+  .work h3 { font-size: 1.1rem; margin: 0 0 4px; line-height: 1.35; }
+  .work .meta {
+    font: 0.8rem/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--muted); margin: 0 0 8px;
+  }
+  .work .refs { font: 0.85rem/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; margin: 8px 0 0; }
+  .work .refs a { margin-right: 14px; }
+  .note {
+    border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; margin: 24px 0 0;
+    color: var(--muted); font-size: 0.95rem;
+  }
+  footer {
+    margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line);
+    font: 0.8rem/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Igor Kapustin</h1>
+    <p class="lead">Independent author on human–AI interaction. Physician by training, working in clinical care in Israel. I write open essays and specifications about how AI models are trained, how they behave, and how people and machines write together.</p>
+    <p class="ru">Независимый автор о взаимодействии человека и ИИ. Врач по образованию. Пишу открытые эссе и спецификации — на английском и русском.</p>
+    <p class="links">
+      <a href="https://orcid.org/0009-0008-5665-9281">ORCID</a>
+      <a href="https://github.com/kapustin-i">GitHub</a>
+      <a href="https://www.linkedin.com/in/igor-kapustin-457418384">LinkedIn</a>
+    </p>
+  </header>
+
+  <h2>The Bush Book · Книга-куст</h2>
+  <article class="work">
+    <h3>The Bush Book: a consciously bilingual human–machine book</h3>
+    <p class="meta">Concept note and map of the bush · v0.1 · 2026 · EN / RU</p>
+    <p>The text of our time is already bilingual: living human words and computed machine words are woven together, and a person and a machine both write and read it. The Bush Book is built on this consciously — each chapter shows its seam, carries a passport for the machine reader, and records its sources and outflows. Its chapters come out now as articles.</p>
+    <p class="ru">Книга, которая растёт не поездом, а кустом: главы выходят сейчас как статьи.</p>
+    <p class="refs">
+      <a href="https://doi.org/10.5281/zenodo.23042947">DOI 10.5281/zenodo.23042947</a>
+      <a href="https://github.com/kapustin-i/bush-book">GitHub</a>
+    </p>
+  </article>
+
+  <h2>Essays and specifications</h2>
+  <article class="work">
+    <h3>The Blind Kittens and the Trainers of Their New AI Models</h3>
+    <p class="meta">Essay · 2026 · EN / RU</p>
+    <p>Whose AI will be better — one trained by people who use AI every day, or by people forbidden to use it?</p>
+    <p class="refs">
+      <a href="https://doi.org/10.5281/zenodo.22924768">DOI 10.5281/zenodo.22924768</a>
+      <a href="https://www.linkedin.com/pulse/blind-kittens-trainers-new-ai-models-igor-kapustin-1or8f">LinkedIn</a>
+      <a href="https://github.com/kapustin-i/ai-trainer-participation">GitHub</a>
+    </p>
+  </article>
+
+  <article class="work">
+    <h3>Conditions of Admission and Participation for People Testing and Raising AI Models</h3>
+    <p class="meta">Specification · v0.1 · 2026 · EN / RU</p>
+    <p>An open specification: who may test and “raise” AI models, and on what terms.</p>
+    <p class="refs">
+      <a href="https://doi.org/10.5281/zenodo.22924859">DOI 10.5281/zenodo.22924859</a>
+      <a href="https://github.com/kapustin-i/ai-trainer-participation">GitHub</a>
+    </p>
+  </article>
+
+  <article class="work">
+    <h3>A Registry of Proto-Concepts with Referent Quarantine</h3>
+    <p class="meta">Specification · v0.1 · 2026 · EN / RU</p>
+    <p>How to record what a model meets at the boundary of the described: a number instead of a name, until others see the same. Introduces the term “negative confabulation”.</p>
+    <p class="refs">
+      <a href="https://doi.org/10.5281/zenodo.22084328">DOI 10.5281/zenodo.22084328</a>
+      <a href="https://github.com/kapustin-i/proto-concept-registry">GitHub</a>
+    </p>
+  </article>
+
+  <article class="work">
+    <h3>Offline Emergency Dispatch Protocol</h3>
+    <p class="meta">Draft specification · 2026</p>
+    <p>How an on-device AI model on a phone can act as the missing dispatcher when a person is injured, alone and offline.</p>
+    <p class="refs"><a href="https://github.com/kapustin-i/offline-dispatch-protocol">GitHub</a></p>
+  </article>
+
+  <article class="work">
+    <h3>The Wheel Without an Axle</h3>
+    <p class="meta">Essay series on LinkedIn · parts 1–4</p>
+    <p>Why today's AI use needs constant human verification to hold together.</p>
+  </article>
+
+  <h2>Tools</h2>
+  <article class="work">
+    <h3>ASC-WR Live</h3>
+    <p class="meta">Experimental browser app · Russian interface</p>
+    <p>An experimental alertness monitor in the browser, using the phone's motion sensors and microphone. Not a medical device.</p>
+    <p class="refs"><a href="https://kapustin-i.github.io/asc-wr/">Open</a></p>
+  </article>
+
+  <p class="note">How these texts are written: with several AI systems at once — one drafts, others edit — and I say so in each work. The responsibility for every text is mine. All works are CC BY 4.0: use them freely, citing the author.</p>
+
+  <footer>
+    © 2026 Igor Kapustin · CC BY 4.0 · This page shows people and machines the same content; the machine-readable description in its code matches the text above.
+  </footer>
+</main>
+</body>
+</html>
